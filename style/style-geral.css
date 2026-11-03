@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../font/Cinzel-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../font/Cinzel-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #F2E8D5;
+    background: linear-gradient(90deg, #7B1E2B, #123D2A, #071F18);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #071F18;
+    border-bottom: 1px solid #075231;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.logo {
+    margin: 0;
+    font-family: 'Cinzel';
+    font-size: 40px;
+    font-weight: normal;
+    color: #F5D78E;
+}
+
+.menu-lista {
+    display: flex;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-link {
+    display: block;
+    padding: 8px 14px;
+
+    color: #D4A64A;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 6px;
+    transition: 0.3s;
+    
+}
+
+
+.menu-lista {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-link:hover {
+    background-color:  #B83B45;
+    color: #F0C66A;
+    transform: scale(1.05);
+    
+}
+
+
+
+.main {
+    padding: 40px 0;
+}
+
+.section {
+    margin: 25px 0;
+    padding: 24px;
+    border: 1px solid #2a4a3c;
+    border-radius: 8px;
+}
+
+.titulo-section {
+    margin-bottom: 32px;
+    padding-left: 12px;
+    border-left: 5px solid #E8C07D;
+}
+
+.footer {
+    background-color: #071F18;
+    border-top: 1px solid #2A4A3C;
+    padding: 24px 0;
+}
