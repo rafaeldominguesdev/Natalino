@@ -95,27 +95,41 @@ a {
     transform: translateY(-4px);
 }
 
-.hero, .secao {
+.secao {
     margin: 32px 0;
     padding: 32px;
     background-color: rgba(7, 31, 24, 0.78);
-    border: 1px solid #2A4A3C;
     border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.hero {
-    padding: 64px 32px;
+.hero { /* titulo solto da home sem caixa */
+    padding: 64px 0;
     text-align: center;
 }
 
-.hero-titulo {
+.hero-titulo { /* titulo grande da home com brilho dourado */
     margin: 0 0 16px;
+    font-family: 'Cinzel Decorative', serif;
     font-size: 64px;
     font-weight: 900;
+    text-shadow: 0 0 18px rgba(212, 166, 74, 0.6);
+    transition: 0.3s;
+}
+
+.hero-titulo:hover { /* passa o mouse e o titulo fica claro com brilho vermelho e cresce */
+    color: #F2E8D5;
+    text-shadow: 0 0 24px #B83B45;
+    transform: scale(1.05);
+}
+
+.subtitulo { /* frase embaixo do titulo */
+    max-width: 600px;
+    margin: 0 auto 28px;
+    font-size: 18px;
 }
 
 .titulo-secao {
-    margin: 0 0 28px;
     padding-left: 14px;
     font-size: 30px;
     border-left: 5px solid #D4A64A;
