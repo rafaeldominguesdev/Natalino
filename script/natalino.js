@@ -1,7 +1,3 @@
-// Interações simples do Natalino.
-// Tudo aqui é melhoria: sem JavaScript o site continua completo e legível.
-
-// ---------- Formulário demonstrativo ----------
 const formulario = document.getElementById('formulario-contato');
 const statusFormulario = document.getElementById('formulario-status');
 
