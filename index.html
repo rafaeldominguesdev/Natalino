@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -6,44 +5,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Natal</title>
+    <title>Natalino | Feliz Natal!</title>
+    <meta name="description"
+        content="Natalino: um site de Natal feito à mão, com a Fábrica dos Sonhos, uma brincadeira de Papai Noel e gnomos e muito espírito natalino.">
+    <meta name="theme-color" content="#071F18">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23F5D78E' d='M12 1.5l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 8.7l7.1-.6z'/%3E%3C/svg%3E">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
 
     <link rel="stylesheet" href="./style/style-geral.css">
+    <script src="./script/natalino.js" defer></script>
 </head>
 
 <body>
 
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
     <header class="header">
         <div class="container">
 
-            <h1 class="logo">Feliz Natal</h1>
+            <a class="marca" href="#home">
+                <span class="logo">Natalino</span>
+            </a>
 
-            <nav class="menu-principal">
+            <nav class="menu-principal" aria-label="Navegação principal">
                 <ul class="menu-lista">
-                    <li><a class="menu-link" href="#">Home</a></li>
-                    <li><a class="menu-link" href="#">História</a></li>
-                    <li><a class="menu-link" href="#">Fábrica dos Sonhos</a></li>
-                    <li><a class="menu-link" href="#">Contato</a></li>
+                    <li><a class="menu-link" href="#home">Home</a></li>
+                    <li><a class="menu-link" href="#fabrica">Fábrica dos Sonhos</a></li>
+                    <li><a class="menu-link" href="#brincadeira">Brincadeira</a></li>
+                    <li><a class="menu-link" href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="conteudo">
         <div class="container">
-            <section></section>
+
+            <section class="hero" id="home" aria-labelledby="titulo-home">
+                <div class="hero-texto">
+                    <h1 class="hero-titulo" id="titulo-home">Feliz Natal!</h1>
+                    <p class="subtitulo">
+                        Um cantinho para celebrar a magia das luzes, a alegria de estar entre amigos
+                        e aquele espírito natalino que deixa tudo mais leve.
+                    </p>
+                    <a class="botao" href="#fabrica">Entrar na Fábrica dos Sonhos</a>
+                </div>
+            </section>
+
+            <section class="secao" aria-labelledby="titulo-espirito">
+                <h2 class="titulo-secao" id="titulo-espirito">O espírito do Natal</h2>
+
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3>Magia</h3>
+                        <p>O encanto das festas: luzes nas janelas, cheiro de ceia e a sensação de que tudo pode
+                            acontecer.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Amizade</h3>
+                        <p>As pessoas que tornam o Natal especial: quem divide a mesa, a risada e as histórias do
+                            ano.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Sonhos</h3>
+                        <p>Desejos e planos para o futuro: o que queremos levar, aprender e construir no próximo
+                            ano.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="secao" id="fabrica" aria-labelledby="titulo-fabrica">
+                <h2 class="titulo-secao" id="titulo-fabrica">Fábrica dos Sonhos</h2>
+
+                <p class="texto-intro">
+                    Lá no alto de uma montanha nevada, onde o vento assobia canções de Natal, fica uma fábrica que
+                    nunca dorme em dezembro. Ali, cada desejo vira projeto, cada carta ganha resposta e cada
+                    dia até a noite de Natal guarda uma pequena surpresa.
+                </p>
+
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3>Oficina dos Presentes</h3>
+                        <p>Martelinhos, papel de presente e fitas por todo lado. Aqui os desejos ganham forma, um
+                            embrulho de cada vez.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Correio do Papai Noel</h3>
+                        <p>Milhares de cartas chegam todo ano. Algumas pedem brinquedos; as melhores pedem paz,
+                            saúde e mais tempo com quem a gente gosta.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Calendário de Surpresas</h3>
+                        <p>Cada dia de dezembro tem uma janelinha nova para abrir. A fábrica inteira conta os dias
+                            até a grande noite.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="secao" id="brincadeira" aria-labelledby="titulo-brincadeira">
+                <h2 class="titulo-secao" id="titulo-brincadeira">Brincadeira</h2>
+
+                <div class="brincadeira">
+                    <div class="brincadeira-texto">
+                        <p>
+                            Nesta brincadeira, o professor entra no clima como Papai Noel e a turma vira um grupo de
+                            gnomos natalinos.
+                        </p>
+                        <p>
+                            O Papai Noel distribui as tarefas, os gnomos fingem que trabalham muito na Fábrica dos
+                            Sonhos e todo mundo jura que o trenó está quase pronto.
+                        </p>
+
+                        <h3>Regras do jogo</h3>
+                        <ul class="lista-regras">
+                            <li>Tudo aqui é de mentirinha.</li>
+                            <li>Ninguém é obrigado a participar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao" id="contato" aria-labelledby="titulo-contato">
+                <h2 class="titulo-secao" id="titulo-contato">Contato</h2>
+
+                <div class="contato">
+                    <form class="formulario" method="dialog" id="formulario-contato">
+                        <div class="campo-formulario">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" autocomplete="name" required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                        </div>
+
+                        <button class="botao" type="submit">Enviar</button>
+
+                        <p class="formulario-status" id="formulario-status" role="status"></p>
+                    </form>
+                </div>
+            </section>
 
         </div>
     </main>
 
     <footer class="footer">
         <div class="container">
-
+            <p class="footer-marca">Natalino</p>
+            <p>&copy; Rafael Domingues – 2026</p>
+            <p class="footer-links">
+                <a href="https://github.com/rafaeldominguesdev" target="_blank" rel="noopener noreferrer">GitHub<span
+                        class="sr-only"> (abre em uma nova aba)</span></a>
+                <span aria-hidden="true">·</span>
+                <a href="#home">Voltar ao topo</a>
+            </p>
         </div>
     </footer>
 
