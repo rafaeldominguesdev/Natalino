@@ -44,10 +44,8 @@
     box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -198,7 +196,7 @@ img {
 
 .grade-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
 }
 
@@ -216,7 +214,7 @@ img {
     margin: 0 0 16px;
 
     font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
-    font-size: clamp(40px, 7vw, 68px);
+    font-size: 64px;
     font-weight: 900;
 }
 
@@ -328,11 +326,6 @@ img {
     border-color: rgba(212, 166, 74, 0.35);
 }
 
-.campo-formulario input:focus,
-.campo-formulario textarea:focus {
-    border-color: #D4A64A;
-}
-
 .footer {
     padding: 28px 0;
     text-align: center;
@@ -344,10 +337,6 @@ img {
 
 .footer p {
     margin: 0 0 6px;
-}
-
-.footer p:last-child {
-    margin-bottom: 0;
 }
 
 .footer-marca {
@@ -427,12 +416,13 @@ img {
         font-size: 25px;
     }
 
+    .hero-titulo {
+        font-size: 40px;
+    }
+
+    .grade-cards {
+        grid-template-columns: 1fr;
+    }
+
 }
 
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        transition: none !important;
-    }
-}
