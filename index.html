@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Natalino | Feliz Natal!</title>
-    <meta name="description"
-        content="Natalino: um site de Natal feito à mão, com a Fábrica dos Sonhos, a Família Natalina e muito espírito natalino.">
+    <meta name="author" content="Rafael Domingues">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
 
@@ -19,16 +18,15 @@
     <header class="header">
         <div class="container">
 
-            <a class="marca" href="#home">
-                <span class="logo">Natalino</span>
+            <a class="marca" href="./index.html">
+                <span class="logo">Feliz Natal</span>
             </a>
 
             <nav class="menu-principal">
                 <ul class="menu-lista">
-                    <li><a class="menu-link" href="#home">Home</a></li>
-                    <li><a class="menu-link" href="#fabrica">Fábrica dos Sonhos</a></li>
-                    <li><a class="menu-link" href="#familia">Família Natalina</a></li>
-                    <li><a class="menu-link" href="#contato">Contato</a></li>
+                    <li><a class="menu-link" href="./index.html">Home</a></li>
+                    <li><a class="menu-link" href="./pages/familia.html">Família Natalina</a></li>
+                    <li><a class="menu-link" href="./pages/contato.html">Contato</a></li>
                 </ul>
             </nav>
 
@@ -38,14 +36,13 @@
     <main class="main">
         <div class="container">
 
-            <section class="hero" id="home">
+            <section class="hero">
                 <div class="hero-texto">
-                    <h1 class="hero-titulo">Feliz Natal!</h1>
+                    <h1 class="hero-titulo">Natal da Turma</h1>
                     <p class="subtitulo">
-                        Um cantinho para celebrar a magia das luzes, a alegria de estar entre amigos
-                        e aquele espírito natalino que deixa tudo mais leve.
+                        Gnomos, Papai Noel e muita bagunça boa: o nosso jeito de comemorar o fim do ano juntos.
                     </p>
-                    <a class="botao" href="#fabrica">Entrar na Fábrica dos Sonhos</a>
+                    <a class="botao" href="./pages/familia.html">Ver a Família Natalina</a>
                 </div>
             </section>
 
@@ -55,83 +52,44 @@
                 <div class="grade-cards">
                     <article class="card">
                         <h3>Magia</h3>
-                        <p>O encanto das festas: luzes nas janelas, cheiro de ceia e a sensação de que tudo pode
+                        <p>O encanto das festas: luzes nas janelas, cheiro de ceia e a sensaçao de que tudo pode
                             acontecer.</p>
                     </article>
 
                     <article class="card">
                         <h3>Amizade</h3>
-                        <p>As pessoas que tornam o Natal especial: quem divide a mesa, a risada e as histórias do
+                        <p>As pessoas que tornam o Natal especial quem divide a mesa a risada e as historias do
                             ano.</p>
                     </article>
 
                     <article class="card">
                         <h3>Sonhos</h3>
-                        <p>Desejos e planos para o futuro: o que queremos levar, aprender e construir no próximo
+                        <p>Desejos e planos para o futuro: o que queremos levar aprender, e construir no proximo
                             ano.</p>
                     </article>
                 </div>
             </section>
 
-            <section class="secao" id="fabrica">
-                <h2 class="titulo-secao">Fábrica dos Sonhos</h2>
+            <section class="secao">
+                <h2 class="titulo-secao">Curiosidades do Natal</h2>
 
-                <p class="texto-intro">
-                    Lá no alto de uma montanha nevada, onde o vento assobia canções de Natal, fica uma fábrica que
-                    nunca dorme em dezembro. Ali, cada desejo vira projeto, cada carta ganha resposta e cada
-                    dia até a noite de Natal guarda uma pequena surpresa.
-                </p>
+                <marquee class="faixa">Feliz Natal, 2º B! ★ Feliz Natal, professor Vedilson! ★ Boas festas para toda a Família Natalina!</marquee>
 
                 <div class="grade-cards">
                     <article class="card">
-                        <h3>Oficina dos Presentes</h3>
-                        <p>Martelinhos, papel de presente e fitas por todo lado. Aqui os desejos ganham forma, um
-                            embrulho de cada vez.</p>
+                        <h3>A árvore de Natal</h3>
+                        <p>O costume de montar arvore de Natal começou na Alemanha, faz mais de 400 anos.</p>
                     </article>
 
                     <article class="card">
-                        <h3>Correio do Papai Noel</h3>
-                        <p>Milhares de cartas chegam todo ano. Algumas pedem brinquedos; as melhores pedem paz,
-                            saúde e mais tempo com quem a gente gosta.</p>
+                        <h3>Noite Feliz</h3>
+                        <p>A musica Noite Feliz foi criada em 1818 na Áustria e hoje é cantada no mundo todo.</p>
                     </article>
 
                     <article class="card">
-                        <h3>Calendário de Surpresas</h3>
-                        <p>Cada dia de dezembro tem uma janelinha nova para abrir. A fábrica inteira conta os dias
-                            até a grande noite.</p>
+                        <h3>Natal no verão</h3>
+                        <p>Aqui no Brasil o Natal é no verão, mas mesmo assim, a decoração tem neve de mentirinha.</p>
                     </article>
-                </div>
-            </section>
-
-            <section class="secao" id="familia">
-                <h2 class="titulo-secao">Família Natalina</h2>
-
-                <img class="foto" src="./img/familia-natalina.png" alt="Turma vestida de gnomos natalinos com o Papai Noel na quadra">
-            </section>
-
-            <section class="secao" id="contato">
-                <h2 class="titulo-secao">Contato</h2>
-
-                <div class="contato">
-                    <form class="formulario">
-                        <div class="campo-formulario">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" required>
-                        </div>
-
-                        <div class="campo-formulario">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="campo-formulario">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                        </div>
-
-                        <button class="botao" type="submit">Enviar</button>
-
-                    </form>
                 </div>
             </section>
 
@@ -140,12 +98,9 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer-marca">Natalino</p>
             <p>&copy; Rafael Domingues – 2026</p>
             <p class="footer-links">
                 <a href="https://github.com/rafaeldominguesdev" target="_blank">GitHub</a>
-                <span>·</span>
-                <a href="#home">Voltar ao topo</a>
             </p>
         </div>
     </footer>
