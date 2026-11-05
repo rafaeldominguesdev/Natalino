@@ -185,22 +185,29 @@ a {
     color: #F2E8D5;
     text-decoration: none;
     background-color: #B83B45;
-    border: 1px solid #D4A64A;
+    border: none;
     border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+    transition: 0.25s;
 }
 
-.botao:hover {
+.botao:hover { /* botao sobe e fica vinho */
     background-color: #7B1E2B;
+    transform: translateY(-4px);
 }
 
-.campo-formulario label {
+.formulario { /* formulario do contato no meio da pagina */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario label { /* nome em cima de cada campo */
     display: block;
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
+    margin-bottom: 4px;
     color: #F5D78E;
 }
 
-.campo-formulario input, .campo-formulario textarea {
+.campo { /* campos de escreve do formulario */
     width: 100%;
     margin-bottom: 16px;
     padding: 10px;
@@ -211,13 +218,12 @@ a {
     border-radius: 6px;
 }
 
-.footer {
-    padding: 8px 0;
-    text-align: center;
-    border-top: 1px solid #2A4A3C;
+.formulario .botao { /* botao enviar ocupa a largura toda */
+    width: 100%;
 }
 
-.footer-marca {
-    font-size: 22px;
-    font-weight: 700;
+.footer {
+    font-size: 13px;
+    text-align: center;
+    opacity: 0.6;
 }
