@@ -50,7 +50,7 @@ a {
 
 .header {
     background-color: #071F18;
-    border-bottom: 1px solid #075231;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .header .container {
@@ -61,15 +61,11 @@ a {
     padding: 14px 0;
 }
 
-.logo, .hero-titulo, .footer-marca {
-    font-family: 'Cinzel Decorative', serif;
-    color: #F5D78E;
-}
-
 .marca {
-    text-decoration: none;
+    font-family: 'Cinzel', serif;
     font-size: 32px;
-    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 0 12px rgba(212, 166, 74, 0.7);
 }
 
 .menu-lista {
@@ -88,6 +84,7 @@ a {
     font-weight: 700;
     color: #D4A64A;
     text-decoration: none;
+    background-color: #123D2A;
     border-radius: 6px;
     transition: 0.25s;
 }
@@ -95,6 +92,7 @@ a {
 .menu-link:hover {
     background-color: #7B1E2B;
     color: #F5D78E;
+    transform: translateY(-4px);
 }
 
 .hero, .secao {
