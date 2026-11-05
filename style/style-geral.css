@@ -271,7 +271,7 @@ img {
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
 }
 
-.card p:last-child {
+.card p {
     margin-bottom: 0;
 }
 
@@ -286,10 +286,6 @@ img {
 .lista-regras {
     margin: 0;
     padding-left: 22px;
-}
-
-.lista-regras li::marker {
-    color: #D4A64A;
 }
 
 .contato {
