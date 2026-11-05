@@ -1,73 +1,36 @@
 @font-face {
     font-family: 'Cinzel';
-    src: url('../font/Cinzel-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cinzel';
-    src: url('../font/Cinzel-Bold.otf') format('opentype');
+    src: url('../font/Cinzel-Bold.otf');
     font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cinzel';
-    src: url('../font/Cinzel-Black.otf') format('opentype');
-    font-weight: 900;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'Cinzel Decorative';
-    src: url('../font/CinzelDecorative-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cinzel Decorative';
-    src: url('../font/CinzelDecorative-Bold.otf') format('opentype');
+    src: url('../font/CinzelDecorative-Bold.otf');
     font-weight: 700;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'Cinzel Decorative';
-    src: url('../font/CinzelDecorative-Black.otf') format('opentype');
+    src: url('../font/CinzelDecorative-Black.otf');
     font-weight: 900;
-    font-display: swap;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    min-height: 100vh;
     margin: 0;
-    padding: 0;
-
-    font-family: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
-    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
     line-height: 1.7;
     color: #F2E8D5;
-
     background-color: #071F18;
     background-image: linear-gradient(90deg, #7B1E2B, #123D2A 55%, #071F18);
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Cinzel', Georgia, serif;
-    font-weight: 700;
-    line-height: 1.2;
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
     color: #F5D78E;
 }
 
@@ -76,17 +39,8 @@ h3 {
     font-size: 21px;
 }
 
-p {
-    margin: 0 0 16px;
-}
-
 a {
     color: #F5D78E;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .container {
@@ -96,13 +50,8 @@ img {
 }
 
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-
     background-color: #071F18;
     border-bottom: 1px solid #075231;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
 }
 
 .header .container {
@@ -110,31 +59,24 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 12px 24px;
-    min-height: 76px;
-    padding: 10px 0;
+    padding: 14px 0;
+}
+
+.logo, .hero-titulo, .footer-marca {
+    font-family: 'Cinzel Decorative', serif;
+    color: #F5D78E;
 }
 
 .marca {
-    display: flex;
-    flex-direction: column;
     text-decoration: none;
-}
-
-.logo {
-    font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
     font-size: 32px;
     font-weight: 700;
-    line-height: 1.1;
-    color: #F5D78E;
 }
 
 .menu-lista {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 6px;
-
     margin: 0;
     padding: 0;
     list-style: none;
@@ -143,286 +85,110 @@ img {
 .menu-link {
     display: block;
     padding: 8px 14px;
-
-    font-family: 'Cinzel', Georgia, serif;
+    font-family: 'Cinzel', serif;
     font-weight: 700;
     color: #D4A64A;
     text-decoration: none;
-
-    border: 1px solid transparent;
     border-radius: 6px;
-    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    transition: 0.25s;
 }
 
 .menu-link:hover {
     background-color: #7B1E2B;
-    border-color: rgba(212, 166, 74, 0.35);
     color: #F5D78E;
-    transform: translateY(-2px);
 }
 
-.main {
-    padding: 40px 0;
-}
-
-#home,
-.secao {
-    scroll-margin-top: 100px;
-}
-
-.secao {
+.hero, .secao {
     margin: 32px 0;
     padding: 32px;
-
     background-color: rgba(7, 31, 24, 0.78);
     border: 1px solid #2A4A3C;
     border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.hero {
+    padding: 64px 32px;
+    text-align: center;
+}
+
+.hero-titulo {
+    margin: 0 0 16px;
+    font-size: 64px;
+    font-weight: 900;
 }
 
 .titulo-secao {
     margin: 0 0 28px;
     padding-left: 14px;
-
     font-size: 30px;
     border-left: 5px solid #D4A64A;
-    border-radius: 3px;
-}
-
-.texto-intro {
-    max-width: 720px;
-    margin-bottom: 28px;
 }
 
 .grade-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
-.hero {
-    padding: 64px 40px;
-    text-align: center;
-
-    background-color: rgba(7, 31, 24, 0.78);
-    border: 1px solid rgba(212, 166, 74, 0.35);
+.card {
+    flex: 1;
+    min-width: 240px;
+    padding: 24px;
+    background-color: rgba(18, 61, 42, 0.55);
+    border: 1px solid #2A4A3C;
     border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
-.hero-titulo {
-    margin: 0 0 16px;
-
-    font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
-    font-size: 64px;
-    font-weight: 900;
-}
-
-.subtitulo {
-    max-width: 560px;
-    margin: 0 auto 28px;
-    font-size: 17px;
-    color: #F2E8D5;
+.foto {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 14px;
 }
 
 .botao {
     display: inline-block;
     padding: 12px 22px;
-
-    font-family: 'Cinzel', Georgia, serif;
+    font-family: 'Cinzel', serif;
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.3;
     color: #F2E8D5;
-    text-align: center;
     text-decoration: none;
-
     background-color: #B83B45;
     border: 1px solid #D4A64A;
     border-radius: 8px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .botao:hover {
     background-color: #7B1E2B;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-
-    background-color: rgba(18, 61, 42, 0.55);
-    border: 1px solid #2A4A3C;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(212, 166, 74, 0.35);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
-}
-
-.card p {
-    margin-bottom: 0;
-}
-
-.brincadeira {
-    max-width: 720px;
-}
-
-.brincadeira-texto h3 {
-    margin-top: 24px;
-}
-
-.lista-regras {
-    margin: 0;
-    padding-left: 22px;
-}
-
-.contato {
-    max-width: 560px;
-}
-
-.campo-formulario {
-    margin-bottom: 16px;
 }
 
 .campo-formulario label {
     display: block;
-    margin-bottom: 6px;
-
-    font-family: 'Cinzel', Georgia, serif;
+    font-family: 'Cinzel', serif;
     font-weight: 700;
     color: #F5D78E;
 }
 
-.campo-formulario input,
-.campo-formulario textarea {
+.campo-formulario input, .campo-formulario textarea {
     width: 100%;
-    padding: 10px 12px;
-
+    margin-bottom: 16px;
+    padding: 10px;
     font: inherit;
     color: #F2E8D5;
-
-    background-color: rgba(7, 31, 24, 0.75);
+    background-color: #071F18;
     border: 1px solid #2A4A3C;
     border-radius: 6px;
-    transition: border-color 0.25s ease;
-}
-
-.campo-formulario textarea {
-    resize: vertical;
-}
-
-.campo-formulario input:hover,
-.campo-formulario textarea:hover {
-    border-color: rgba(212, 166, 74, 0.35);
 }
 
 .footer {
-    padding: 28px 0;
+    padding: 8px 0;
     text-align: center;
-
-    background-color: #071F18;
     border-top: 1px solid #2A4A3C;
-    border-radius: 24px 24px 0 0;
-}
-
-.footer p {
-    margin: 0 0 6px;
 }
 
 .footer-marca {
-    font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
     font-size: 22px;
     font-weight: 700;
-    color: #F5D78E;
 }
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px 10px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    transition: color 0.25s ease;
-}
-
-.footer-links a:hover {
-    color: #D4A64A;
-    text-decoration: underline;
-}
-
-@media (max-width: 720px) {
-    .header {
-        position: static;
-    }
-
-    #home,
-    .secao {
-        scroll-margin-top: 16px;
-    }
-
-    .header .container {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 14px 0;
-    }
-
-    .marca {
-        align-items: center;
-    }
-
-    .menu-lista {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .menu-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        padding: 8px 6px;
-        font-size: 14px;
-        text-align: center;
-        border-color: #2A4A3C;
-    }
-
-    .main {
-        padding: 24px 0;
-    }
-
-    .secao {
-        margin: 24px 0;
-        padding: 22px 18px;
-    }
-
-    .hero {
-        padding: 32px 18px;
-    }
-
-    .titulo-secao {
-        font-size: 25px;
-    }
-
-    .hero-titulo {
-        font-size: 40px;
-    }
-
-    .grade-cards {
-        grid-template-columns: 1fr;
-    }
-
-}
-
