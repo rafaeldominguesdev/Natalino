@@ -372,15 +372,6 @@ img {
     border-color: #D4A64A;
 }
 
-.formulario-status {
-    margin: 14px 0 0;
-    color: #F5D78E;
-}
-
-.formulario-status:empty {
-    display: none;
-}
-
 .footer {
     padding: 28px 0;
     text-align: center;
