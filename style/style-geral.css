@@ -143,19 +143,37 @@ a {
 
 .card {
     flex: 1;
-    min-width: 240px;
-    padding: 24px;
+    min-width: 260px;
+    padding: 28px;
+    font-size: 14px;
     background-color: rgba(18, 61, 42, 0.55);
-    border: 1px solid #2A4A3C;
     border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
-.foto {
-    display: block;
-    width: 100%;
-    max-width: 500px;
+.faixa { /* faixa vermelha com o texto passando */
+    margin-bottom: 24px;
+    padding: 8px;
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F5D78E;
+    background-color: #7B1E2B;
+    border-radius: 6px;
+}
+
+.moldura { /* moldura dourada da foto com brilho */
+    max-width: 520px;
     margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #D4A64A;
     border-radius: 14px;
+    box-shadow: 0 0 25px rgba(212, 166, 74, 0.4);
+}
+
+.foto { /* foto ocupa a moldura toda */
+    width: 100%;
 }
 
 .botao {
